@@ -191,7 +191,7 @@ section{
         position:absolute;
         width:100%;
         height:30px;
-        margin-top: 35%;
+        margin-top: 25%;
     }
 
 }
@@ -211,6 +211,9 @@ section{
     .left, .portfolio-left{
         display: grid;
         place-content: center;
+    }
+    .inner{
+        padding-right: 15px;
     }
     .righ{
         margin-left: 2em;
