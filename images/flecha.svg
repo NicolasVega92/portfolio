@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="135.74" height="129.092" viewBox="0 0 135.74 129.092">
+  <g id="flecha" transform="translate(-144.451 -58.145)">
+    <g id="Component_1_1" data-name="Component 1 – 1" transform="translate(144.451 58.145)">
+      <path id="Polygon_1" data-name="Polygon 1" d="M44,0,88,77H0Z" transform="translate(91.74) rotate(60)" fill="#91091e"/>
+      <path id="Polygon_2" data-name="Polygon 2" d="M34,0,68,83H0Z" transform="matrix(0.602, 0.799, -0.799, 0.602, 66.287, 24.834)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

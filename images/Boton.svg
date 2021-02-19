@@ -1,0 +1,11 @@
+<svg width="69" height="116" viewBox="0 0 69 116">
+  <g id="Boton" transform="translate(-153 -681)">
+    <g id="Component_10_1" data-name="Component 10 – 1" transform="translate(153 681)">
+      <g id="Rectangle_4" data-name="Rectangle 4" fill="none" stroke="#fbf9f9" stroke-width="7">
+        <rect width="69" height="116" rx="34.5" stroke="none"/>
+        <rect x="3.5" y="3.5" width="62" height="109" rx="31" fill="none"/>
+      </g>
+      <ellipse id="Ellipse_1" data-name="Ellipse 1" cx="19.5" cy="22" rx="19.5" ry="22" transform="translate(15 14)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

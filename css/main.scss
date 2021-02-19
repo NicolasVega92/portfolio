@@ -1,0 +1,356 @@
+//importo fonts poppins
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+body{
+    height: 100vw;
+    margin: 0;
+    font-family: 'Poppins', 'arial';
+    margin-bottom: 40px;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+}
+
+.nav-container{
+    background: #C39E5C;
+    a{
+        color: white;
+    }
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+
+    .logo{
+        color: #91091E;
+        font-weight: bold;
+    }
+
+    ul{
+        display: flex;
+
+        a{
+            display: block;
+            padding: 0 1em;
+        }
+    }
+}
+//iconos social media AGREGAR
+.social-header, .cuadros{
+    display: none;
+}
+
+.hero{
+    background: #DA723C;
+    color: white;
+    display: grid;
+    text-align: center;
+    padding: 4em;
+}
+
+.meet{
+    display: flex;
+    margin: 0 auto;
+    width: 200px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #91091E;
+
+    span{
+        margin-top: 1em;
+        margin-right: .5em;
+    }
+}
+
+.Boton{
+    width: 50px;
+    margin-top: 1em;
+}
+
+section{
+    padding: 4em 2em;
+    text-align: center;
+}
+
+.featured{
+    position: relative;
+}
+
+//creo el circulo trasparente
+.featured::before{
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: #FDF1D6;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.subtitle{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #DA723C;
+    letter-spacing: .2em;
+    font-size: .85em;
+}
+.featured-title{
+    color: black;
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-top: -.4em;
+    display: block;
+}
+.featured-desc{
+    color: #3b3b3b;
+    margin-bottom: 3em;
+    font-size: .9em;
+    line-height: 1.8em;
+    font-weight: 500;
+}
+.skills{
+    background: #B29F3D;
+}
+.skills-container ul li{
+    background: white;
+    padding: 2em;
+    border-radius: 1em;
+    margin-bottom: 1em;
+
+    .icon-container{
+        height: 100px;
+        display: grid;
+        place-content: center;
+        margin: 0 auto;
+    
+        &.one{
+            width: 140px;
+        }
+        &.two{
+            width: 110px;
+        }
+        &.three{
+            width: 140px;
+        }
+    }
+
+    .skill-title{
+        font-weight:bold;
+    }
+    .featured-desc{
+        margin-bottom: 2em;
+    }
+}
+
+.folio{
+    background: white;
+}
+.portfolio-container a img{
+    border-radius: 1em;
+    margin-bottom: 2em;
+}   
+
+.aboutme{
+    padding: 0;
+    .logo-foot-claro{
+        position: absolute;
+        height:300px;
+        width:100%;
+        z-index: -1;
+        text-align: center;
+    }
+    .aboutme-title{
+
+        color: #91091E;
+        position: absolute;
+        z-index: 1;
+        margin: 10px auto;
+        padding: 10px;
+        margin-left: 15%;
+        margin-right: 15%;
+        padding-bottom: 10px;
+        .aboutme-desc{
+            color: black;
+            
+        }
+    }
+    .logo-foot-foot{
+        position:absolute;
+        width:100%;
+        height:30px;
+        margin-top: 35%;
+    }
+
+}
+
+@media only screen and (min-width: 800px){
+    .featured, .folio{
+        text-align: left;
+        .work-title{
+            text-align: center;
+        }
+    }
+
+    .featured, .portfolio-container{
+        display: grid;
+        grid-template-columns: 40% auto;
+    }
+    .left, .portfolio-left{
+        display: grid;
+        place-content: center;
+    }
+    .righ{
+        margin-left: 2em;
+        margin-top: 1em;
+    }
+    .skills{
+        margin-top: -9em;
+        margin-bottom: -7em;
+        padding-top: 7em;
+        .skills-title{
+            position: relative;  
+        }
+    }
+
+    .skills-container ul{
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-gap: 1em
+    }
+    .folio{
+        padding-top: 5em;
+    }
+    
+    .portfolio-container{
+        margin-left: 2em;
+    }
+}
+
+@media only screen and (min-width: 1050px){
+    .hero{
+        height: 60vw;
+    }
+    .nav-container{
+        display: grid;
+        grid-template-columns: 66% auto;
+        background:unset;
+        header{
+            background:#C39E5C ;
+        }
+    }
+    header{
+        padding: 2em 2em 2em 4em;
+    }
+    .social-header{
+        padding: 2em 4em 2em 0;
+    }
+    section{
+        padding: 4em;
+    }
+
+    .social-header{
+        display: block;
+        ul{
+            display: flex;
+            justify-content: space-between;
+            width: 7em;
+            float: right;
+            margin-right: 10px;
+            img{
+                width: 40px;
+            }
+            .link{
+                width: 53px;
+                margin-top: -5px;
+                position: absolute;
+                margin-left: -19px;
+            }
+            .git{
+                position: absolute;
+                width: 58px;
+                margin-top: -8px;
+            }
+        }
+    }
+    .hero{
+        display: grid;
+        grid-template-columns: 66% auto;
+        background: unset;
+        padding: 0;
+        .content{
+            background:#DA723C;
+            padding: 6em 8em 6em 4em;
+            text-align: left;
+
+            h1{
+                font-size: 3em;
+                line-height: 1.3em;
+            }
+        }
+    }
+    .meet{
+        margin: unset;
+    }
+    .cuadros{
+        display: unset;
+        margin-left: -50%;
+        margin-top: 15%;
+        width: 100%;
+    }
+    .folio img{
+        float: right;
+        max-width: 500px;
+        max-height: 300px;
+    }
+    p.aboutme-desc{
+        margin-top: 5%;
+        margin-bottom: 5%;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
+
+@media only screen and (min-width: 1250px){
+    header{
+        padding:2em 2em 2em 10em;
+    }
+    .social-header{
+        padding:2em 10em 2em 0 ;
+    }
+    section{
+        padding:10em 10em 4em 10em ;
+    }
+    .hero .content{
+        padding: 6em 8em 6em 10em;
+    }
+
+}
+
+@media only screen and (min-width: 1550px){
+    header{
+        padding:2em 2em 2em 20em;
+    }
+    .social-header{
+        padding:2em 20em 2em 0 ;
+    }
+    section{
+        padding:6em 20em 4em 20em ;
+    }
+    .hero .content{
+        padding: 9em 20em 6em 20em;
+    }
+
+}
